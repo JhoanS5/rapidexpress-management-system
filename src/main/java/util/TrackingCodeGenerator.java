@@ -5,7 +5,7 @@ import java.util.Random;
 public class TrackingCodeGenerator {
 
     private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    private static final int LENGTH = 10; // Longitud del tracking code
+    private static final int LENGTH = 10; 
 
     private TrackingCodeGenerator() {
         // Evitar instanciación

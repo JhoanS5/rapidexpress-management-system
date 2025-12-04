@@ -7,17 +7,15 @@ public class CLIUtils {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    // Leer un string con prompt
-    public static String leerString(String prompt) {
-        System.out.print(prompt + ": ");
+    public static String leerString(String mensaje) {
+        System.out.print(mensaje + ": ");
         return scanner.nextLine().trim();
     }
 
-    // Leer un número entero con prompt
-    public static int leerInt(String prompt) {
+    public static int leerInt(String mensaje) {
         while (true) {
             try {
-                System.out.print(prompt + ": ");
+                System.out.print(mensaje + ": ");
                 return Integer.parseInt(scanner.nextLine().trim());
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida. Intente nuevamente.");
@@ -25,11 +23,10 @@ public class CLIUtils {
         }
     }
 
-    // Leer un double con prompt
-    public static double leerDouble(String prompt) {
+    public static double leerDouble(String mensaje) {
         while (true) {
             try {
-                System.out.print(prompt + ": ");
+                System.out.print(mensaje + ": ");
                 return Double.parseDouble(scanner.nextLine().trim());
             } catch (NumberFormatException e) {
                 System.out.println("Entrada inválida. Intente nuevamente.");
@@ -37,10 +34,9 @@ public class CLIUtils {
         }
     }
 
-    // Leer opción sí/no
-    public static boolean leerBoolean(String prompt) {
+    public static boolean leerBoolean(String bool) {
         while (true) {
-            System.out.print(prompt + " (s/n): ");
+            System.out.print(bool + " (s/n): ");
             String input = scanner.nextLine().trim().toLowerCase();
             if (input.equals("s")) return true;
             if (input.equals("n")) return false;
@@ -48,7 +44,6 @@ public class CLIUtils {
         }
     }
 
-    // Generador de Tracking Code para Paquetes
     public static String generarTrackingCode() {
         String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random rnd = new Random();

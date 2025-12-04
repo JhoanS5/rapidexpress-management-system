@@ -38,7 +38,6 @@ public class ServicioConductor {
         return conductorDAO.obtenerTodosConductores();
     }
 
-    // Lógica adicional: solo asignar conductores activos a rutas
     public boolean estaDisponible(Conductor conductor) {
         return conductor != null && conductor.getEstado() == EstadoConductor.ACTIVO;
     }
