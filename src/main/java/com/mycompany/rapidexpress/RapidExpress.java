@@ -1,16 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.rapidexpress;
 
-/**
- *
- * @author Jhoan
- */
-public class RapidExpress {
+import view.MenuPrincipalCLI;
+
+public class RapidExpress{
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        MenuPrincipalCLI menu = new MenuPrincipalCLI();
+        menu.iniciar();
     }
 }
