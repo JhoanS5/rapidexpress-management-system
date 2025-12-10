@@ -215,6 +215,22 @@ Ingrese clave: ********
 
 ---
 
+## Examen Java
+
+- Requerimiento Detallado
+
+Deberás extender la funcionalidad actual de los vehículos para incorporar los nuevos tipos y sus reglas de negocio asociadas.
+
+Creación de Tipos Especializados: El sistema ahora debe reconocer dos nuevos tipos de vehículos: "Motocicleta" y "Camión". Estos deben compartir las características comunes de un vehículo existente (placa, marca, capacidad, etc.), pero también tener sus propias particularidades.
+
+
+Reglas de Validación Específicas: Cada tipo de vehículo debe tener su propio método para validar si puede transportar un paquete determinado. Para este ejercicio, la regla es:
+
+    Las motocicletas no pueden transportar paquetes que pesen más de 25 kg.
+    Los camiones, por ahora, no tienen restricciones adicionales más allá de las generales del vehículo.
+
+Se agrego la validaciones dichas en el enunciado
+
 ## 👥 Autores
 
 **Jhoan Diaz** | [JhoanS5](https://github.com/JhoanS5) 
